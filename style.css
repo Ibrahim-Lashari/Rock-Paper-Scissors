@@ -1,3 +1,8 @@
 h1 {
     font-size: 60px;
 }
+.choice {
+    border-color:blueviolet;
+    border-width: 50px;
+    text-align: center;
+}
