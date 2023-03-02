@@ -1,8 +1,26 @@
+body {
+    background-image: url("60ef7092831013.5e556dc3873d8.png");
+    color:seashell;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
 h1 {
     font-size: 60px;
 }
+
 .choice {
-    border-color:blueviolet;
+    border-color:darkturquoise;
     border-width: 50px;
     text-align: center;
+}
+
+.afterChoice {
+    border-color:gold;
+    border-width: 50px;
+    text-align: center;
+}
+
+.footer {
+    border-radius: 50px;
+    background-color: grey;
 }

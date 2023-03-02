@@ -12,33 +12,40 @@
         <div class="row">
             <div class="col text-center">
                 <h1>Rock Paper Scissors</h1>
+                <h2>Click the buttons below to play Rock, Paper, or Scissors</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 text-center">
-                <h2>You:</h2>
+                <h2>You: <br> 0</h2>
             </div>
             <div class="col-lg-4"></div>
             <div class="col-lg-4 text-center">
-                <h2>Computer:</h2>
+                <h2>Computer: <br> 0</h2>
             </div>
         </div>
-        <br> <br> <br> <br> <br> <br> 
+       <br> <br> <br> 
         <div class="row">
-            <div class="col-lg-10">
-                <button class="text-danger bg-info-subtle p-5" id="rock" onclick="playRock(); getComputerChoice();">
-                    <img src="Rock_N_Roll_Garden_Rock_Bisque.jpg" height="300px" width="400px">
+            <div class="col-sm-9">
+                <button class="bg-info-subtle p-5" id="rock" onclick="playRock() ; getComputerChoice();">
+                    <img src="Rock_N_Roll_Garden_Rock_Bisque.jpg" height="250px" width="350px">
                 </button>
-                <button class="text-danger bg-info-subtle p-5" id="paper" onclick="playPaper(); getComputerChoice();">
-                    <img src="maxresdefault.jpg" height="300px" width="400px">
+                <button class="bg-info-subtle p-5" id="paper" onclick="playPaper() ; getComputerChoice();">
+                    <img src="maxresdefault.jpg" height="250px" width="350px">
                 </button>
-                <button class="text-danger bg-info-subtle p-5" id="scissors" onclick="playScissors(); getComputerChoice();">
-                    <img src="Diamond_sword_minecraft.webp" height="300px" width="400px">
+                <button class="bg-info-subtle p-5" id="scissors" onclick="playScissors() ; getComputerChoice();">
+                    <img src="Diamond_sword_minecraft.webp" height="250px" width="350px">
                 </button>
             </div>
-            <div class="col-lg-2">
-                <button class="bg-info-subtle p-5" id="computer">
-                    <h1>balls</h1>
+            <div class="col-sm-3">
+                <button class="bg-info-subtle p-5" id="cpuRock">
+                    <img src="Rock_N_Roll_Garden_Rock_Bisque.jpg" height="250px" width="350px">
+                </button>
+                <button class="bg-info-subtle p-5" id="cpuPaper">
+                    <img src="maxresdefault.jpg" height="250px" width="350px">
+                </button>
+                <button class="bg-info-subtle p-5" id="cpuScissors">
+                    <img src="Diamond_sword_minecraft.webp" height="250px" width="350px">
                 </button>
             </div>
         </div>
@@ -46,17 +53,25 @@
         <div class="row">
             <div class="col text-center">
                 <button onclick="reset()">
-                    <h4>Reset</h4>
+                    <h4>Click this button to reset the game</h4>
                 </button>
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-8">
+                <footer class="text-center footer">
+                    <h3>Designer: Ibrahim Lashari. Contact Me at 123-456-7890, or myemail@gmail.com</h3>
+                </footer>
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+        </div>
     </div>
-    
-    
-    
-    
-    
-    
     
     
     
