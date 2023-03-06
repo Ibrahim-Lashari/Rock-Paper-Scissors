@@ -67,6 +67,53 @@ function playScissors() { // When scissors is clicked, person will play scissors
   document.getElementById('scissors').style.display = 'block';
   userChoice = "scissors"
 }
+
+let playerScore = 0
+let computerScore = 0
+
+// Determines the winner 
+function determineWinner() {
+  if (userChoice === computerChoice) {
+    document.getElementById("result").innerHTML = "You tied with the computer!"
+  } else { }
+
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      computerScore++
+      document.getElementById('computerScore').innerHTML = computerScore;
+      document.getElementById("result").innerHTML = "Computer Wins!"
+    } else {
+      playerScore++
+      document.getElementById('playerScore').innerHTML = playerScore;
+      document.getElementById("result").innerHTML = "You Win!"
+    }
+  } else { }
+
+  if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      computerScore++
+      document.getElementById('computerScore').innerHTML = computerScore;
+      document.getElementById("result").innerHTML = "Computer Wins!"
+    } else {
+      playerScore++
+      document.getElementById('playerScore').innerHTML = playerScore;
+      document.getElementById("result").innerHTML = "You Win!"
+    }
+  } else { }
+
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      computerScore++
+      document.getElementById('computerScore').innerHTML = computerScore;
+      document.getElementById("result").innerHTML = "Computer Wins!"
+    } else {
+      playerScore++
+      document.getElementById('playerScore').innerHTML = playerScore;
+      document.getElementById("result").innerHTML = "You Win!"
+    }
+  } else { }
+}
+
 function reset() { // Resets the game //
   document.getElementById('rock').style.display = '';
   document.getElementById('paper').style.display = '';
@@ -76,37 +123,9 @@ function reset() { // Resets the game //
   document.getElementById('cpuScissors').style.display = 'none';
   document.getElementById("result").innerHTML = 'Winner:'
 }
-
-let playerScore = 0
-let computerScore = 0
-
-// Determines the winner 
-function determineWinner() {
-  if (userChoice === computerChoice) {
-    return document.getElementById("result").innerHTML = "You tied with the computer!"
-  } else { }
-
-  if (userChoice === 'rock') {
-    if (computerChoice === 'paper') {
-      return document.getElementById("result").innerHTML = "Computer Wins!"
-    } else {
-      return document.getElementById("result").innerHTML = "You Win!"
-    }
-  } else { }
-
-  if (userChoice === 'paper') {
-    if (computerChoice === 'scissors') {
-      return document.getElementById("result").innerHTML = "Computer Wins!"
-    } else {
-      return document.getElementById("result").innerHTML = "You Win!"
-    }
-  } else { }
-
-  if (userChoice === 'scissors') {
-    if (computerChoice === 'rock') {
-      return document.getElementById("result").innerHTML = "Computer Wins!"
-    } else {
-      return document.getElementById("result").innerHTML = "You Win!"
-    }
-  } else { }
+function resetScore() { // Resets the score //
+  playerScore = 0;
+  computerScore = 0;
+  document.getElementById("playerScore").innerHTML = playerScore;
+  document.getElementById("computerScore").innerHTML = computerScore;
 }
