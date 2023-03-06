@@ -21,23 +21,24 @@
     </div>
     <div class="row">
       <div class="col-md-4 text-center">
-        <h2 id="userChoice">You: <br> 0</h2>
+        <h2>You: <br> <span id="playerScore">0</span></h2>
       </div>
       <div class="col-md-4"></div>
       <div class="col-md-4 text-center">
-        <h2 id="computerScore">Computer: <br> </h2>
+        <h2>Computer: <br> <span id="computerScore">0</span></h2>
       </div>
     </div>
     <br> <br> <br>
     <div class="row">
       <div class="col-sm-9">
-        <button class="bg-info-subtle p-5" id="rock" onclick="playRock() ; getComputerChoice();">
+        <button class="bg-info-subtle p-5" id="rock" onclick="playRock() ; getComputerChoice() ; determineWinner();">
           <img src="Rock_N_Roll_Garden_Rock_Bisque.jpg" height="200px" width="300px">
         </button>
-        <button class="bg-info-subtle p-5" id="paper" onclick="playPaper() ; getComputerChoice();">
+        <button class="bg-info-subtle p-5" id="paper" onclick="playPaper() ; getComputerChoice() ; determineWinner()">
           <img src="maxresdefault.jpg" height="200px" width="300px">
         </button>
-        <button class="bg-info-subtle p-5" id="scissors" onclick="playScissors() ; getComputerChoice();">
+        <button class="bg-info-subtle p-5" id="scissors"
+          onclick="playScissors() ; getComputerChoice() ; determineWinner()">
           <img src="Diamond_sword_minecraft.webp" height="200px" width="300px">
         </button>
       </div>

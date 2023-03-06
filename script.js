@@ -30,43 +30,42 @@ function getComputerChoice() { // Computer will make a randomized choice after t
   }
 }
 
-
-let computerChoice = ""
+var computerChoice = ""
 
 function computerRock() { // When person chooses, computer randomly picks rock //
   document.getElementById('cpuRock').style.display = 'block';
   document.getElementById('cpuRock').className = 'afterChoice';
-  let computerChoice = "rock"
+  computerChoice = "rock"
 }
 
 function computerPaper() { // When person chooses, computer randomly picks paper //
   document.getElementById('cpuPaper').style.display = 'block';
   document.getElementById('cpuPaper').className = 'afterChoice';
-  let computerChoice = "paper"
+  computerChoice = "paper"
 }
 
 function computerScissors() { // When person chooses, computer randomly picks scissors //
   document.getElementById('cpuScissors').style.display = 'block';
   document.getElementById('cpuScissors').className = 'afterChoice';
-  let computerChoice = "scissors"
+  computerChoice = "scissors"
 }
 
-let userChoice = ""
+var userChoice = ""
 
 function playRock() { // When rock is clicked, person will play rock //
   hidePanels();
   document.getElementById('rock').style.display = 'block';
-  let userChoice = "rock"
+  userChoice = "rock"
 }
 function playPaper() { // When paper is clicked, person will play paper //
   hidePanels();
   document.getElementById('paper').style.display = 'block';
-  let userChoice = "paper"
+  userChoice = "paper"
 }
 function playScissors() { // When scissors is clicked, person will play scissors //
   hidePanels();
   document.getElementById('scissors').style.display = 'block';
-  let userChoice = "scissors"
+  userChoice = "scissors"
 }
 function reset() { // Resets the game //
   document.getElementById('rock').style.display = '';
@@ -75,14 +74,39 @@ function reset() { // Resets the game //
   document.getElementById('cpuRock').style.display = 'none';
   document.getElementById('cpuPaper').style.display = 'none';
   document.getElementById('cpuScissors').style.display = 'none';
+  document.getElementById("result").innerHTML = 'Winner:'
 }
 
 let playerScore = 0
 let computerScore = 0
 
 // Determines the winner 
-const determineWinner = (userChoice, computerChoice) => {
+function determineWinner() {
   if (userChoice === computerChoice) {
     return document.getElementById("result").innerHTML = "You tied with the computer!"
-  }
+  } else { }
+
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return document.getElementById("result").innerHTML = "Computer Wins!"
+    } else {
+      return document.getElementById("result").innerHTML = "You Win!"
+    }
+  } else { }
+
+  if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      return document.getElementById("result").innerHTML = "Computer Wins!"
+    } else {
+      return document.getElementById("result").innerHTML = "You Win!"
+    }
+  } else { }
+
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return document.getElementById("result").innerHTML = "Computer Wins!"
+    } else {
+      return document.getElementById("result").innerHTML = "You Win!"
+    }
+  } else { }
 }
