@@ -1,6 +1,8 @@
 body {
     background-image: url("60ef7092831013.5e556dc3873d8.png");
-    color:seashell;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:blue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
