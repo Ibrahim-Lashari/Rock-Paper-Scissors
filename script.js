@@ -73,11 +73,11 @@ let computerScore = 0
 
 // Determines the winner 
 function determineWinner() {
-  if (userChoice === computerChoice) {
+  if (userChoice === computerChoice) { // When computer and player choose the same, tie message is displayed //
     document.getElementById("result").innerHTML = "You tied with the computer!"
   } else { }
 
-  if (userChoice === 'rock') {
+  if (userChoice === 'rock') { // When computer or person wins, score is added //
     if (computerChoice === 'paper') {
       computerScore++
       document.getElementById('computerScore').innerHTML = computerScore;
@@ -89,7 +89,7 @@ function determineWinner() {
     }
   } else { }
 
-  if (userChoice === 'paper') {
+  if (userChoice === 'paper') { // When computer or person wins, score is added //
     if (computerChoice === 'scissors') {
       computerScore++
       document.getElementById('computerScore').innerHTML = computerScore;
@@ -101,7 +101,7 @@ function determineWinner() {
     }
   } else { }
 
-  if (userChoice === 'scissors') {
+  if (userChoice === 'scissors') { // When computer or person wins, score is added //
     if (computerChoice === 'rock') {
       computerScore++
       document.getElementById('computerScore').innerHTML = computerScore;
